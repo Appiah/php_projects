@@ -1,0 +1,86 @@
+<div class='ms_footer' onmouseover="end_all_pawas();">
+
+
+
+<noscript><div style="margin-left: 50px;"></noscript>
+
+<div id='ms_pawa_F'><noscript><a href='index.php'></noscript><font onclick="ms_pawa_2();">mySPEEDEM</font><noscript></a></noscript>
+<ul><noscript><a href='ms_login.php'></noscript><font onclick="ms_pawa4b();">Login</font><noscript></a></noscript><br><font size='-3' onclick="opnsimpl_sms();"><noscript><a href='ms_login.php'></noscript>Simple SMS<noscript></a></noscript></font><br><font size='-3' onclick="opnxtrmsms();"><noscript><a href='ms_login_2.php'></noscript>X'treme SMS<noscript></a></noscript></font></ul>
+<ul><noscript><a href='ms_signup.php'></noscript><font onclick="signup_nw();">Sign Up</font><noscript></a></noscript></ul>
+<br>
+<noscript><a href='ms_prices.php'></noscript><font onclick="opn_prcz();">Prices</font><noscript></a></noscript>
+<br>
+<ul><noscript><a href='ms_prices.php'></noscript><font onclick="opn_prcz();" size='-3'>pre-paid</font><noscript></a></noscript></ul>
+<ul><noscript><a href='ms_prices.php'></noscript><font onclick="opn_prcz();" size='-3'>post-paid</font><noscript></a></noscript></ul>
+<br>
+<noscript><a href='ms_clients.php'></noscript><font onclick="opn_Clientz();">Our Clients</font><noscript></a></noscript>
+</div>
+
+<noscript></div></noscript>
+
+<div id='ms_pawa2_F'><noscript><a href='ms_app_center.php'></noscript><font onclick="opn_appCntr();">App Center</font><noscript></a></noscript>
+<?php echo $all_apps; ?>
+<p>
+<!--<noscript><a href='ms_tnc.php'></noscript>Terms and Conditions<noscript></a></noscript>-->
+<p>
+<?php include("solutions_array.php"); ?>
+<noscript><a href='ms_solutions_live.php'></noscript><font onclick="dsply_solns();">Solutions</font><noscript></a></noscript>
+<?php 
+for($sN=0; $sN<6; $sN++){
+	echo "<ul><noscript><a href='ms_solutions_live.php'></noscript><font onclick=\"dsply_solns();\">$hdNz[$sN]</font><noscript></a></noscript></ul>";
+}
+?>
+
+</div>
+
+<div id='ms_pawa3_F'><?php echo "$paymntLnk"; ?>
+
+<?php
+
+include("ms_arr_pymnt_accz.php");
+
+for($bnknmz=0; $bnknmz<4; $bnknmz++){
+	
+	echo "<ul><noscript><a href='ms_payments.php'></noscript><font id='main_pawa' onclick=\"opn_paymentz();\">$bankz[$bnknmz]</font><noscript></a></noscript></ul>";
+	
+}
+
+?>
+
+</div>
+
+<div id='ms_pawa4_F'>Downloads
+<?php echo $all_apps; ?>
+<ul><a href='dl/mySPEEDEM_SMS_pricing.pdf'>Prices (pdf)</a></ul>
+<ul><a href='dl/mySPEEDEM_user_manual.pdf'>Manual (pdf)</a></ul>
+
+<p>
+Contacts Us
+<ul>Enquiries: <br>+233 265 997 977</ul>
+<ul>Sales: <br>+233 242 550 332</ul>
+<ul>Mail: client@myspeedem.com</ul>
+<ul>Mail: support@myspeedem.com</ul>
+<ul>Facebook: mySPEEDEM Services</ul>
+</div>
+
+<?php include("faqz_array.php"); ?>
+<div id='ms_pawa5_F' title='Frequently Asked Questions'><noscript><a href='ms_faqz.php'></noscript><font onclick="dsply_faq();">FAQs</font><noscript></a></noscript>
+
+<?php
+
+for($faqq=0; $faqq<$faq_n; $faqq++){
+
+echo "<ul><noscript><a href='ms_faqz.php'></noscript><font onclick=\"dsply_faq();\">$quesn[$faqq]</font><noscript></a></noscript></ul>";
+
+}
+
+
+?>
+
+</div>
+
+<div id='copyryt'><b>Our Location : </b><p>SPEEDEM CO. LTD.,<br>Tafo Pankrono - Atimatim, Monic Junction<br>Ashanti Region Ghana, West Africa<br>Tel: +233 265 997 977<br>E-mail: support@myspeedem.com<p>Copyright &copy; 2012. All rights reserved.<p><p><i>credits: images from infobip, apple, photo stocker etc.<i></div>
+
+<div id='init_usp'>SPEEDEM . . . < <i>We diliva</i> ></div>
+
+</div>
